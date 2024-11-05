@@ -1,12 +1,12 @@
 [
     {
-        "product_id": "1",
-        "product_title": "Dell XPS 13",
-        "product_image": "https://i.ibb.co.com/W38kLZs/Dell-XPS-13-Plus-1.webp",
+        "productId": "1",
+        "productTitle": "Dell XPS 13",
+        "productImage": "https://i.ibb.co.com/W38kLZs/Dell-XPS-13-Plus-1.webp",
         "category": "Laptop",
         "price": 999.99,
         "description": "A high-performance laptop with a sleek design and impressive battery life.",
-        "Specification": [
+        "specification": [
             "13.3-inch FHD display",
             "Intel Core i7",
             "16GB RAM",
@@ -16,13 +16,13 @@
         "rating": 4.7
     },
     {
-        "product_id": "2",
-        "product_title": "Apple MacBook Pro 14",
-        "product_image": "https://i.ibb.co.com/pW2LcFt/Macbook-pro-14-and-16-overview-fz0lron5xyuu-og.png",
+        "productId": "2",
+        "productTitle": "Apple MacBook Pro 14",
+        "productImage": "https://i.ibb.co.com/pW2LcFt/Macbook-pro-14-and-16-overview-fz0lron5xyuu-og.png",
         "category": "MacBook",
         "price": 1999.99,
         "description": "Powerful MacBook with M1 Pro chip for creatives and professionals.",
-        "Specification": [
+        "specification": [
             "14-inch Retina display",
             "Apple M1 Pro chip",
             "16GB RAM",
@@ -32,13 +32,13 @@
         "rating": 4.9
     },
     {
-        "product_id": "3",
-        "product_title": "iPhone 14 Pro",
-        "product_image": "https://i.ibb.co.com/C9pjSvM/IPhone-14-Pro-Space-Black-1138.jpg",
+        "productId": "3",
+        "productTitle": "iPhone 14 Pro",
+        "productImage": "https://i.ibb.co.com/C9pjSvM/IPhone-14-Pro-Space-Black-1138.jpg",
         "category": "iPhone",
         "price": 1099.99,
         "description": "Latest iPhone with advanced camera system and A16 Bionic chip.",
-        "Specification": [
+        "specification": [
             "6.1-inch Super Retina XDR display",
             "A16 Bionic chip",
             "Triple 48MP rear camera",
@@ -48,13 +48,13 @@
         "rating": 4.8
     },
     {
-        "product_id": "4",
-        "product_title": "Samsung Galaxy S22 Ultra",
-        "product_image": "https://i.ibb.co.com/ZXq1kB4/B0-productcomboshotwithlogo-phantomwhite-220120-3e24dc53-ff8c-4a7b-82d2-ffb49cd80e7d-1200x.webp",
+        "productId": "4",
+        "productTitle": "Samsung Galaxy S22 Ultra",
+        "productImage": "https://i.ibb.co.com/ZXq1kB4/B0-productcomboshotwithlogo-phantomwhite-220120-3e24dc53-ff8c-4a7b-82d2-ffb49cd80e7d-1200x.webp",
         "category": "Phone",
         "price": 1199.99,
         "description": "Samsung's flagship phone with high-end features and S-Pen support.",
-        "Specification": [
+        "specification": [
             "6.8-inch QHD+ AMOLED display",
             "Snapdragon 8 Gen 1",
             "108MP main camera",
@@ -64,13 +64,13 @@
         "rating": 4.6
     },
     {
-        "product_id": "5",
-        "product_title": "Apple Watch Series 8",
-        "product_image": "https://i.ibb.co.com/myPqchm/71-Jm-Lzc-RE8-L-AC-UF1000-1000-QL80.jpg",
+        "productId": "5",
+        "productTitle": "Apple Watch Series 8",
+        "productImage": "https://i.ibb.co.com/myPqchm/71-Jm-Lzc-RE8-L-AC-UF1000-1000-QL80.jpg",
         "category": "Smart Watch",
         "price": 399.99,
         "description": "Advanced health tracking and fitness features with a larger display.",
-        "Specification": [
+        "specification": [
             "45mm Retina display",
             "Blood Oxygen & ECG apps",
             "Water resistant",
@@ -80,13 +80,13 @@
         "rating": 4.5
     },
     {
-        "product_id": "6",
-        "product_title": "Google Pixel 7",
-        "product_image": "https://i.ibb.co.com/JRxYKNK/Google-Pixel-7.jpg",
+        "productId": "6",
+        "productTitle": "Google Pixel 7",
+        "productImage": "https://i.ibb.co.com/JRxYKNK/Google-Pixel-7.jpg",
         "category": "Phone",
         "price": 699.99,
         "description": "Google’s latest Pixel phone with AI-driven camera features.",
-        "Specification": [
+        "specification": [
             "6.3-inch OLED display",
             "Google Tensor G2",
             "50MP dual-camera system",
@@ -96,13 +96,13 @@
         "rating": 4.4
     },
     {
-        "product_id": "7",
-        "product_title": "HP Spectre x360",
-        "product_image": "https://i.ibb.co.com/WpJ0xZ1/HPSpectre-X.webp",
+        "productId": "7",
+        "productTitle": "HP Spectre x360",
+        "productImage": "https://i.ibb.co.com/WpJ0xZ1/HPSpectre-X.webp",
         "category": "Laptop",
         "price": 1249.99,
         "description": "Convertible laptop with a 2-in-1 design and excellent battery life.",
-        "Specification": [
+        "specification": [
             "13.5-inch FHD touchscreen",
             "Intel Core i7",
             "16GB RAM",
@@ -112,13 +112,13 @@
         "rating": 4.6
     },
     {
-        "product_id": "8",
-        "product_title": "Samsung Galaxy Watch 5",
-        "product_image": "https://i.ibb.co.com/TgpfDhP/Untitled-3-1200x1200.jpg",
+        "productId": "8",
+        "productTitle": "Samsung Galaxy Watch 5",
+        "productImage": "https://i.ibb.co.com/TgpfDhP/Untitled-3-1200x1200.jpg",
         "category": "Smart Watch",
         "price": 299.99,
         "description": "Durable smartwatch with advanced health-tracking features.",
-        "Specification": [
+        "specification": [
             "44mm AMOLED display",
             "Sleep and SpO2 tracking",
             "Water resistant",
@@ -128,13 +128,13 @@
         "rating": 4.3
     },
     {
-        "product_id": "9",
-        "product_title": "OnePlus 10 Pro",
-        "product_image": "https://i.ibb.co.com/XLkcsT5/EU-IN-Green.png",
+        "productId": "9",
+        "productTitle": "OnePlus 10 Pro",
+        "productImage": "https://i.ibb.co.com/XLkcsT5/EU-IN-Green.png",
         "category": "Phone",
         "price": 899.99,
         "description": "Flagship smartphone with high-performance specs and fast charging.",
-        "Specification": [
+        "specification": [
             "6.7-inch QHD+ display",
             "Snapdragon 8 Gen 1",
             "50MP triple camera",
@@ -144,13 +144,13 @@
         "rating": 4.5
     },
     {
-        "product_id": "10",
-        "product_title": "Asus ROG Zephyrus G15",
-        "product_image": "https://i.ibb.co.com/y82MCWL/images.jpg",
+        "productId": "10",
+        "productTitle": "Asus ROG Zephyrus G15",
+        "productImage": "https://i.ibb.co.com/y82MCWL/images.jpg",
         "category": "Laptop",
         "price": 1499.99,
         "description": "Powerful gaming laptop with a sleek design and high refresh rate display.",
-        "Specification": [
+        "specification": [
             "15.6-inch QHD 165Hz display",
             "AMD Ryzen 9",
             "16GB RAM",
@@ -161,13 +161,13 @@
         "rating": 4.7
     },
     {
-        "product_id": "11",
-        "product_title": "Apple MacBook Air M2",
-        "product_image": "https://i.ibb.co.com/1q3Svt1/images-2.jpg",
+        "productId": "11",
+        "productTitle": "Apple MacBook Air M2",
+        "productImage": "https://i.ibb.co.com/1q3Svt1/images-2.jpg",
         "category": "MacBook",
         "price": 1199.99,
         "description": "Lightweight and powerful MacBook Air with the M2 chip for everyday tasks.",
-        "Specification": [
+        "specification": [
             "13.6-inch Retina display",
             "Apple M2 chip",
             "8GB RAM",
@@ -177,13 +177,13 @@
         "rating": 4.8
     },
     {
-        "product_id": "12",
-        "product_title": "Huawei MatePad Pro",
-        "product_image": "https://i.ibb.co.com/p2Fn34C/images-1.jpg",
+        "productId": "12",
+        "productTitle": "Huawei MatePad Pro",
+        "productImage": "https://i.ibb.co.com/p2Fn34C/images-1.jpg",
         "category": "Tablet",
         "price": 549.99,
         "description": "High-resolution tablet with powerful performance and stylus support.",
-        "Specification": [
+        "specification": [
             "12.6-inch OLED display",
             "Kirin 9000E",
             "8GB RAM",

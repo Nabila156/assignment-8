@@ -7,7 +7,7 @@ const Gadgets = () => {
     const [gadgets, setGadgets] = useState([]);
 
     useEffect(() => {
-        fetch('./gadgets.json')
+        fetch('/gadgets.json')
             .then(res => res.json())
             .then(data => setGadgets(data))
     }, [])
@@ -22,7 +22,7 @@ const Gadgets = () => {
 
                 <div className="lg:w-[70%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {
-                        gadgets.map(gadget => <Gadget gadget={gadget} key={gadget.product_id}></Gadget>)
+                        gadgets.map(gadget => <Gadget gadget={gadget} key={gadget.productId}></Gadget>)
                     }
                 </div>
             </div>

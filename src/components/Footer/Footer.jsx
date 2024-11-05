@@ -8,7 +8,7 @@ const Footer = () => {
             <p className="mb-12">Leading the way in cutting-edge technology and innovation.</p>
 
 
-            <footer className="footer text-center">
+            <footer className="footer lg:ml-20 text-center">
                 <nav>
                     <h6 className="footer-title">Services</h6>
                     <a className="link link-hover">Product Support</a>
