@@ -1,8 +1,10 @@
 
+import Gadgets from "../../Gadgets/Gadgets";
+
 const Home = () => {
     return (
         <div>
-           <h2>HOME</h2>            
+           <Gadgets></Gadgets>
         </div>
     );
 };
