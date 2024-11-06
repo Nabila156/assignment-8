@@ -13,7 +13,7 @@ const GadgetDetails = () => {
     const { productTitle, productImage, price, availability, specification, description, rating } = selectedGadget;
 
     return (
-        <div className="card lg:card-side w-[60%] mx-auto p-4 bg-white border">
+        <div className="card lg:card-side w-[60%] mx-auto p-4 bg-white border relative bottom-32">
             <figure className="w-[40%]">
                 <img
                     src={productImage}
@@ -32,17 +32,17 @@ const GadgetDetails = () => {
                         <li key={index}>{item}</li>
                     ))}
                 </ol>
-                <div class="rating rating-sm ml-4">
-                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
-                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
-                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
-                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
-                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                <div className="rating rating-sm ml-4">
+                    <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" />
                 </div>
                 <p className="text-base font-semibold bg-slate-200 p-2 w-1/3 rounded-full text-center">Rating : {rating}</p>
                 <div className="flex gap-6 items-center">
                     <button className="btn text-white bg-[#9538E2]">Add To Cart<CiShoppingCart className="text-xl"/></button>
-                    <CiHeart className="cursor-pointer text-4xl border rounded-full p-1" />
+                    <button className="hover:bg-red-600 text-3xl border rounded-full p-1" ><CiHeart/></button>
                 </div>
             </div>
         </div>

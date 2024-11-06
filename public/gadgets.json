@@ -192,5 +192,53 @@
         ],
         "availability": true,
         "rating": 4.6
+    },
+    {
+        "productId": "13",
+        "productTitle": "Lenovo ThinkPad X1 Carbon",
+        "productImage": "https://i.ibb.co.com/42mdz7Q/Lenovo-Think-Pad-X1-Carbon-Gen-9-2.webp",
+        "category": "Laptop",
+        "price": 1299.99,
+        "description": "Lightweight and durable business laptop with strong security features.",
+        "specification": [
+            "14-inch FHD display",
+            "Intel Core i7",
+            "16GB RAM",
+            "512GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "productId": "14",
+        "productTitle": "Microsoft Surface Laptop 5",
+        "productImage": "https://i.ibb.co.com/VTWJqVX/1666362913-1729186.jpg",
+        "category": "Laptop",
+        "price": 1099.99,
+        "description": "Elegant laptop with a vibrant touchscreen and smooth performance.",
+        "specification": [
+            "13.5-inch PixelSense display",
+            "Intel Core i5",
+            "8GB RAM",
+            "256GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "productId": "15",
+        "productTitle": "Acer Swift 3",
+        "productImage": "https://i.ibb.co.com/2YckGjw/Acer-Swift-3-SF314-Price-1.webp",
+        "category": "Laptop",
+        "price": 699.99,
+        "description": "Affordable and portable laptop with a full HD display.",
+        "specification": [
+            "14-inch FHD display",
+            "AMD Ryzen 7",
+            "8GB RAM",
+            "512GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.4
     }
 ]

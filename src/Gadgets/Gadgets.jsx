@@ -15,7 +15,7 @@ const Gadgets = () => {
     return (
         <div className="mx-20">
             <h2 className="text-center mb-16 text-black text-4xl font-bold">Explore Cutting-Edge Gadgets</h2>
-            <div className="flex flex-col lg:flex-row mx-auto gap-4 my-12">
+            <div className="flex flex-col lg:flex-row justify-center mx-auto gap-4 my-12">
                 <div className="lg:w-[20%]">
                     <Categories></Categories>
                 </div>

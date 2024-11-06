@@ -3,21 +3,26 @@ import { CiShoppingCart } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
 import Banner from "../../Banner/Banner";
 import BannerImage from "../../BannerImage/BannerImage";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
 
+    const location = useLocation();
+
+    const isHomePage = location.pathname === "/";
+
     const links = <>
 
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink>Statistics</NavLink></li>
-        <li><NavLink>Dashboard</NavLink></li>
+        <li className={`font-medium ${isHomePage ? "text-white" : "text-black"}`}><NavLink to="/">Home</NavLink></li>
+        <li className={`font-medium ${isHomePage ? "text-white" : "text-black"}`}><NavLink to="/statistics">Statistics</NavLink></li>
+        <li className={`font-medium ${isHomePage ? "text-white" : "text-black"}`}><NavLink to="/dashboard">Dashboard</NavLink></li>
 
     </>
 
     return (
-        <div className="p-10">
-            <div className="px-8 rounded-xl bg-[#9538E2]">
-                <div className="navbar">
+        <div className={`${isHomePage ? 'px-20 py-12' : 'p-0'}`}>
+            <div className={`${isHomePage ? 'bg-[#9538E2] px-8 rounded-xl' : 'px-0'} `}>
+                <div className={`navbar ${isHomePage ? '' : 'bg-white lg:px-24'}`}>
                     <div className="navbar-start">
                         <div className="dropdown">
                             <div tabIndex="0" role="button" className="btn btn-ghost lg:hidden">
@@ -40,7 +45,7 @@ const Navbar = () => {
                                 {links}
                             </ul>
                         </div>
-                        <a className="font-bold text-white text-xl">Gadget Heaven</a>
+                        <a className={`font-bold text-xl ${isHomePage ? 'text-white' : 'text-black'}`}>Gadget Heaven</a>
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1">
@@ -48,17 +53,21 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end text-4xl">
-                        <CiShoppingCart className="bg-white rounded-full p-1" />
-                        <CiHeart className="bg-white rounded-full p-1 ml-3" />
+                        <CiShoppingCart className="bg-white border rounded-full p-1" />
+                        <CiHeart className="bg-white border rounded-full p-1 ml-3" />
                     </div>
 
                 </div>
 
-                <Banner></Banner>
+                <div className={`${isHomePage ? '' : ' bg-[#9538E2]'}`}>
+                    <Banner></Banner>
+                </div>
 
             </div>
 
-            <BannerImage></BannerImage>
+            {
+                isHomePage ? <BannerImage></BannerImage> : ''
+            }
         </div>
     );
 };
