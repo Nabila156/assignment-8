@@ -13,6 +13,8 @@ import GadgetDetails from './GadgetDetails/GadgetDetails.jsx';
 import Statistics from './Statistics/Statistics.jsx';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import WishlistGadgets from './WishlistGadgets/WishlistGadgets.jsx';
+import CartGadgets from './CartGadgets/CartGadgets.jsx';
 
 const router = createBrowserRouter([
   {
@@ -33,10 +35,16 @@ const router = createBrowserRouter([
         path: '/dashboard',
         element: <Dashboard></Dashboard>
       },
-      // {
-      //   path: '/dashboard/cart',
-      //   element: <CartGadgets></CartGadgets>
-      // },
+      {
+        path: '/dashboard/cart',
+        element: <CartGadgets></CartGadgets>,
+        loader: ()=> fetch('/gadgets.json')
+      },
+      {
+        path: '/dashboard/wishlist',
+        element: <WishlistGadgets></WishlistGadgets>,
+        loader: ()=> fetch('/gadgets.json')
+      },      
       {
         path: '/statistics',
         element: <Statistics></Statistics>

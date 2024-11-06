@@ -38,7 +38,7 @@ const getStoredWishList = () => {
 const addToStoredWishList = (id) => {
     const storedWishList = getStoredWishList();
     if (storedWishList.includes(id)) {
-        console.log(id, 'already exists in the read list')
+        toast('This gadget has been already added to your wishlist.')
     }
     else {
         storedWishList.push(id);
@@ -47,4 +47,4 @@ const addToStoredWishList = (id) => {
     }
 }
 
-export { addToStoredCartList, addToStoredWishList, getStoredCartList }
+export { addToStoredCartList, addToStoredWishList, getStoredCartList, getStoredWishList}

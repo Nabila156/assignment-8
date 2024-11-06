@@ -1,7 +1,8 @@
-import { NavLink, useLoaderData, useParams } from "react-router-dom";
+import { NavLink, useLoaderData, useNavigate, useParams } from "react-router-dom";
 import { CiShoppingCart } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
-import { addToStoredCartList } from "../utility/addToList";
+import { addToStoredCartList, addToStoredWishList } from "../utility/addToList";
+import { useState } from "react";
 
 const GadgetDetails = () => {
 
@@ -13,8 +14,19 @@ const GadgetDetails = () => {
 
     const { productTitle, productImage, price, availability, specification, description, rating } = selectedGadget;
 
-    const handleAddToCart = (id) =>{
-         addToStoredCartList(id);
+    const navigate = useNavigate();
+
+    const [isDisabled, setIsDisabled] = useState(false);
+
+    const handleAddToCart = (id) => {
+        addToStoredCartList(id);
+    }
+
+    const handleWishList = (id) => {
+        addToStoredWishList(id);
+        setIsDisabled(true);
+        console.log(isDisabled)
+        navigate('/dashboard/wishlist');
     }
 
     return (
@@ -46,8 +58,8 @@ const GadgetDetails = () => {
                 </div>
                 <p className="text-base font-semibold bg-slate-200 p-2 w-1/3 rounded-full text-center">Rating : {rating}</p>
                 <div className="flex gap-6 items-center">
-                    <button onClick={()=> handleAddToCart(id)} className="btn text-white bg-[#9538E2]"><NavLink className="flex items-center gap-2" to="/dashboard">Add To Cart<CiShoppingCart className="text-xl"/></NavLink></button>
-                    <button className="hover:bg-red-600 text-3xl border rounded-full p-1" ><CiHeart/></button>
+                    <NavLink className="flex items-center gap-2" to="/dashboard/cart"><button onClick={() => handleAddToCart(id)} className="btn text-white bg-[#9538E2]">Add To Cart<CiShoppingCart className="text-xl" /></button></NavLink>
+                    <button onClick={() => handleWishList(id)} disabled={isDisabled} className={`${isDisabled ? 'hover: opacity-50 cursor-not-allowed' : 'hover:bg-red-600'}  text-3xl border rounded-full p-1`} ><CiHeart /></button>
                 </div>
             </div>
         </div>
