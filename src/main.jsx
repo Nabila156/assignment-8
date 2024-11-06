@@ -11,6 +11,8 @@ import Home from './components/Home/Home.jsx';
 import Dashboard from './Dashboard/Dashboard.jsx';
 import GadgetDetails from './GadgetDetails/GadgetDetails.jsx';
 import Statistics from './Statistics/Statistics.jsx';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +33,10 @@ const router = createBrowserRouter([
         path: '/dashboard',
         element: <Dashboard></Dashboard>
       },
+      // {
+      //   path: '/dashboard/cart',
+      //   element: <CartGadgets></CartGadgets>
+      // },
       {
         path: '/statistics',
         element: <Statistics></Statistics>
@@ -42,5 +48,6 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
       <RouterProvider router={router} />
+      <ToastContainer />
   </StrictMode>,
 )

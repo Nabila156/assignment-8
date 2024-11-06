@@ -1,6 +1,7 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { NavLink, useLoaderData, useParams } from "react-router-dom";
 import { CiShoppingCart } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
+import { addToStoredCartList } from "../utility/addToList";
 
 const GadgetDetails = () => {
 
@@ -11,6 +12,10 @@ const GadgetDetails = () => {
     const selectedGadget = data.find(gadget => gadget.productId === id);
 
     const { productTitle, productImage, price, availability, specification, description, rating } = selectedGadget;
+
+    const handleAddToCart = (id) =>{
+         addToStoredCartList(id);
+    }
 
     return (
         <div className="card lg:card-side w-[60%] mx-auto p-4 bg-white border relative bottom-32">
@@ -41,7 +46,7 @@ const GadgetDetails = () => {
                 </div>
                 <p className="text-base font-semibold bg-slate-200 p-2 w-1/3 rounded-full text-center">Rating : {rating}</p>
                 <div className="flex gap-6 items-center">
-                    <button className="btn text-white bg-[#9538E2]">Add To Cart<CiShoppingCart className="text-xl"/></button>
+                    <button onClick={()=> handleAddToCart(id)} className="btn text-white bg-[#9538E2]"><NavLink className="flex items-center gap-2" to="/dashboard">Add To Cart<CiShoppingCart className="text-xl"/></NavLink></button>
                     <button className="hover:bg-red-600 text-3xl border rounded-full p-1" ><CiHeart/></button>
                 </div>
             </div>

@@ -1,6 +1,9 @@
 import { GrSort } from "react-icons/gr";
+import CartGadgets from "../CartGadgets/CartGadgets";
+
 
 const Dashboard = () => {
+
     return (
         <div className="m-10 px-20">
             <div className="flex justify-between items-center">
@@ -16,6 +19,9 @@ const Dashboard = () => {
                    </div>
                 </div>
             </div>
+
+        <CartGadgets></CartGadgets>
+         
 
         </div>
     );

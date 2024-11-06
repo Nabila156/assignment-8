@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Banner = () => {
 
@@ -36,8 +36,8 @@ const Banner = () => {
             {
                 isDashboard && (
                     <div className="mt-8 flex justify-center items-center gap-6">
-                        <button className="btn text-[#9538E2] text-center bg-none text-xl rounded-full py-1 px-10">Cart</button> 
-                        <button className="btn text-white bg-[#9538E2] text-center bg-none text-xl rounded-full py-1 px-10">Wishlist</button>
+                        <button className="btn text-[#9538E2] text-center text-xl rounded-full py-1 px-10"><NavLink to="/dashboard">Cart</NavLink></button> 
+                        <button className="btn text-white bg-[#9538E2] text-center text-xl rounded-full py-1 px-10"><NavLink>Wishlist</NavLink></button>
                     </div>
                 )
             }
