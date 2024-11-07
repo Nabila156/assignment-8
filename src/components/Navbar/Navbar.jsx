@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { CiShoppingCart } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
 import Banner from "../../Banner/Banner";
@@ -6,6 +6,15 @@ import BannerImage from "../../BannerImage/BannerImage";
 import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
+
+    const navigate = useNavigate();
+
+    const navigateCart = ()=>{
+        navigate('/dashboard/cart');
+    }
+    const navigateWishlist = ()=>{
+        navigate('/dashboard/wishlist');
+    }
 
     const location = useLocation();
 
@@ -53,8 +62,8 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end text-4xl">
-                        <CiShoppingCart className="bg-white border rounded-full p-1" />
-                        <CiHeart className="bg-white border rounded-full p-1 ml-3" />
+                        <CiShoppingCart onClick={navigateCart} className="bg-white border rounded-full p-1" />
+                        <CiHeart onClick={navigateWishlist} className="bg-white border rounded-full p-1 ml-3" />
                     </div>
 
                 </div>

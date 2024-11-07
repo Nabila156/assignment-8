@@ -18,6 +18,7 @@ const WishlistGadgets = () => {
         setGadgetList(wishList);
     },[]);
 
+    
 
     return (
         <div className="mx-20 m-10">

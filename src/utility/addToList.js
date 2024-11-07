@@ -24,6 +24,13 @@ const addToStoredCartList = (id) => {
     }
 }
 
+
+const clearCart = ()=>{
+    localStorage.removeItem("cart-list");
+}
+
+
+
 const getStoredWishList = () => {
     const storedWishListStr = localStorage.getItem('wish-list');
     if (storedWishListStr) {
@@ -48,4 +55,4 @@ const addToStoredWishList = (id) => {
     }
 }
 
-export { addToStoredCartList, addToStoredWishList, getStoredCartList, getStoredWishList}
+export { addToStoredCartList, addToStoredWishList, getStoredCartList, getStoredWishList, clearCart}
