@@ -227,18 +227,68 @@
     },
     {
         "productId": "15",
-        "productTitle": "Acer Swift 3",
-        "productImage": "https://i.ibb.co.com/2YckGjw/Acer-Swift-3-SF314-Price-1.webp",
-        "category": "Laptop",
-        "price": 699.99,
-        "description": "Affordable and portable laptop with a full HD display.",
+        "productTitle": "Apple iPad Air 5th Gen",
+        "productImage": "https://i.ibb.co.com/DCfmngL/i-Pad-Air-5-price-in-bangladesh.jpg",
+        "category": "Tablet",
+        "price": 599.99,
+        "description": "Lightweight and powerful tablet with advanced display and Apple Pencil support.",
         "specification": [
-            "14-inch FHD display",
-            "AMD Ryzen 7",
+            "10.9-inch Liquid Retina display",
+            "Apple M1 chip",
+            "64GB storage",
+            "12MP Ultra Wide front camera"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "productId": "16",
+        "productTitle": "iPhone 13 Mini",
+        "productImage": "https://i.ibb.co.com/72YVZ06/3410-42224.jpg",
+        "category": "iPhone",
+        "price": 699.99,
+        "description": "Compact and powerful iPhone with a great camera and A15 Bionic chip.",
+        "specification": [
+            "5.4-inch Super Retina XDR display",
+            "A15 Bionic chip",
+            "Dual 12MP camera system",
+            "5G capable"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "productId": "17",
+        "productTitle": "Samsung Galaxy Tab S8",
+        "productImage": "https://i.ibb.co.com/rMV33TX/Samsung-Tab-S8.jpg",
+        "category": "Tablet",
+        "price": 849.99,
+        "description": "High-end tablet with vibrant display and support for S-Pen.",
+        "specification": [
+            "11-inch LTPS TFT display",
+            "Snapdragon 8 Gen 1",
             "8GB RAM",
+            "128GB storage",
+            "S-Pen support"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "productId": "18",
+        "productTitle": "Microsoft Surface Laptop 4",
+        "productImage": "https://i.ibb.co.com/1bVWmkV/RWBrzy.jpg",
+        "category": "Laptop",
+        "price": 1299.99,
+        "description": "Elegant and powerful laptop with a stunning PixelSense display and all-day battery life.",
+        "specification": [
+            "13.5-inch PixelSense display",
+            "Intel Core i7",
+            "16GB RAM",
             "512GB SSD"
         ],
         "availability": true,
-        "rating": 4.4
+        "rating": 4.8
     }
+    
 ]

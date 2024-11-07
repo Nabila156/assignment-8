@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getStoredCartList } from "../utility/addToList";
-import CartCard from "../CartCard/CArtCArd";
+import CartCard from "../CartCard/CartCard";
 import { useLoaderData } from "react-router-dom";
 import { GrSort } from "react-icons/gr";
 

@@ -2,7 +2,7 @@ import { NavLink, useLoaderData, useNavigate, useParams } from "react-router-dom
 import { CiShoppingCart } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
 import { addToStoredCartList, addToStoredWishList } from "../utility/addToList";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const GadgetDetails = () => {
 
@@ -26,8 +26,14 @@ const GadgetDetails = () => {
         addToStoredWishList(id);
         setIsDisabled(true);
         console.log(isDisabled)
-        navigate('/dashboard/wishlist');
+        // navigate('/dashboard/wishlist');
     }
+
+    useEffect(() => {
+        if (isDisabled) {
+            navigate('/dashboard/wishlist'); // Navigate only after isDisabled is true
+        }
+    }, [isDisabled, navigate]);
 
     return (
         <div className="card lg:card-side w-[60%] mx-auto p-4 bg-white border relative bottom-32">
@@ -58,8 +64,10 @@ const GadgetDetails = () => {
                 </div>
                 <p className="text-base font-semibold bg-slate-200 p-2 w-1/3 rounded-full text-center">Rating : {rating}</p>
                 <div className="flex gap-6 items-center">
-                    <NavLink className="flex items-center gap-2" to="/dashboard/cart"><button onClick={() => handleAddToCart(id)} className="btn text-white bg-[#9538E2]">Add To Cart<CiShoppingCart className="text-xl" /></button></NavLink>
+                    <NavLink className="flex items-center gap-2" to="/dashboard/cart"><button onClick={() => handleAddToCart(id)} className="btn text-lg text-white bg-[#9538E2]">Add To Cart<CiShoppingCart className="text-2xl" /></button></NavLink>
                     <button onClick={() => handleWishList(id)} disabled={isDisabled} className={`${isDisabled ? 'hover: opacity-50 cursor-not-allowed' : 'hover:bg-red-600'}  text-3xl border rounded-full p-1`} ><CiHeart /></button>
+                    {/* <button onClick={() => handleWishList(id)} disabled={true} className={`${isDisabled ? 'hover: opacity-50 cursor-not-allowed' : 'hover:bg-red-600'}  text-3xl border rounded-full p-1`} ><CiHeart /></button> */}
+                    {/* <button onClick={() => handleWishList(id)} disabled={true} className={`text-3xl border rounded-full p-1 hover:bg-red-600`} ><CiHeart /></button> */}
                 </div>
             </div>
         </div>

@@ -1,0 +1,10 @@
+[
+    { "id": "0", "category": "All Products" },
+    { "id": "1", "category": "Laptop" },
+    { "id": "2", "category": "MacBook" },
+    { "id": "3", "category": "iPhone" },
+    { "id": "4", "category": "Phone" },
+    { "id": "5", "category": "Smart Watch" },
+    { "id": "6", "category": "Tablet" },
+    { "id": "7", "category": "Accessories" }
+]
