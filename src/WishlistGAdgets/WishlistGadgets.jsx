@@ -30,7 +30,7 @@ const WishlistGadgets = () => {
 
             <h2 className="my-8 font-bold text-2xl">Wishlist</h2>
             {
-                gadgetList.map(gadget => <CartCard key={gadget.productId} gadget={gadget}></CartCard>)
+                gadgetList.map(gadget => <CartCard key={gadget.productId} gadget={gadget} setGadgetList={setGadgetList}></CartCard>)
             }
         </div>
     );

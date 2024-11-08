@@ -72,7 +72,7 @@ const CartGadgets = () => {
 
             </div>
             {
-                gadgetList.map(gadget => <CartCard key={gadget.productId} gadget={gadget}></CartCard>)
+                gadgetList.map(gadget => <CartCard key={gadget.productId} gadget={gadget} setGadgetList={setGadgetList}></CartCard>)
             }
 
             {

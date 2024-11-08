@@ -1,10 +1,26 @@
 import React from 'react';
 import { TiDelete } from "react-icons/ti";
-import { removeCartGadget } from '../utility/addToList';
+import { removeCartGadget, removeWishlistGadget } from '../utility/addToList';
 
-const CartCard = ({ gadget }) => {
+const CartCard = ({ gadget, setGadgetList }) => {
 
     const {productImage, productTitle, description, price, productId} = gadget;
+
+    const updatedCartList = ()=>{
+        removeCartGadget(productId);
+        const newList = prevList=> prevList.filter(item=> item.productId !== productId) ;
+        setGadgetList(newList);
+    }
+    const updatedWishList = ()=>{
+        removeWishlistGadget(productId);
+        const newList = prevList=> prevList.filter(item=> item.productId !== productId) ;
+        setGadgetList(newList);
+    }
+
+    const removeItem =()=>{
+        updatedCartList();
+        updatedWishList();
+    }
 
     return (
         <div className='flex px-10 py-4 items-center gap-8 overflow-hidden mb-8 rounded-2xl bg-white'>
@@ -15,8 +31,7 @@ const CartCard = ({ gadget }) => {
                     <p className='mt-4 font-medium text-slate-500'>{description}</p>
                     <p className='mt-4 text-lg font-semibold'>Price : {price}</p>
                 </div>
-                <div className='text-6xl'>
-                {/* <div onClick={()=> removeCartGadget(productId)} className='text-6xl'> */}
+                <div onClick={removeItem} className='text-6xl'>
                     <TiDelete />
                 </div>
             </div>
