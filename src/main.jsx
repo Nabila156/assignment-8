@@ -5,18 +5,10 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-// import ErrorPage from './ErrorPage/ErrorPage.jsx';
-// import Home from './Home/Home.jsx';
-// import Dashboard from './Dashboard/Dashboard.jsx';
-// import GadgetDetails from './GadgetDetails/GadgetDetails.jsx';
-// import Statistics from './Statistics/Statistics.jsx';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-// import WishlistGadgets from './WishlistGAdgets/WishlistGadgets.jsx';
-// import CartGadgets from './CartGadgets/CartGadgets.jsx';
-// import Discount from './Discount/Discount.jsx';
 import { HelmetProvider } from 'react-helmet-async';
-import { Root } from 'postcss';
+import Root from './components/Root/Root';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import Home from './components/Home/Home';
 import GadgetDetails from './components/GadgetDetails/GadgetDetails';

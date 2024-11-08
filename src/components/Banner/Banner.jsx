@@ -1,7 +1,9 @@
 import { useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 
 const Banner = () => {
+
+    const navigate = useNavigate();
 
     const location = useLocation();
 
@@ -25,6 +27,9 @@ const Banner = () => {
         setIsCartActive(!isCartActive)
     }
 
+    const shop = ()=>navigate('/dashboard');
+
+
     return (
         <div className={`text-center ${isHomePage || isGadgetDetails? 'pb-44' : 'pb-10'}`}>
             {
@@ -45,7 +50,7 @@ const Banner = () => {
                 getDiscount && <h1 className="text-white pt-10 md:leading-[70px] font-bold text-2xl md:text-4xl">Discount</h1>
             }
             {
-               isHomePage && <button className="btn mt-8 rounded-full text-[#9538E2] font-bold text-lg bg-white">Shop Now</button>
+               isHomePage && <button onClick={shop} className="btn mt-8 rounded-full text-[#9538E2] font-bold text-lg bg-white">Shop Now</button>
                  
             }
             <p className="text-white mt-5">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>

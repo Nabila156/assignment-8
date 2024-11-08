@@ -55,9 +55,9 @@ const Navbar = () => {
                                 {links}
                             </ul>
                         </div>
-                        <div className="flex gap-2">
+                        <div className="flex items-center gap-2">
                             <img className="size-10 rounded-xl bg-white p-[2px]" src="/images/logo.png" alt="logo" />
-                            <a className={`font-bold text-xl ${isHomePage ? 'text-white' : 'text-black'}`}>Gadget Heaven</a>
+                            <a className={`font-bold text-2xl ${isHomePage ? 'text-white' : 'text-black'}`}>Gadget Heaven</a>
                         </div>
                     </div>
                     <div className="navbar-center hidden lg:flex">
