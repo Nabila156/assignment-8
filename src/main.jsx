@@ -16,6 +16,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import WishlistGadgets from './WishlistGadgets/WishlistGadgets.jsx';
 import CartGadgets from './CartGadgets/CartGadgets.jsx';
 import Discount from './Discount/Discount.jsx';
+import { HelmetProvider } from 'react-helmet-async';
 
 const router = createBrowserRouter([
   {
@@ -26,17 +27,17 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: ()=> fetch('/gadgetCategories.json')
+        loader: () => fetch('/gadgetCategories.json')
       },
       {
         path: '/gadgets/:productId',
         element: <GadgetDetails></GadgetDetails>,
-        loader: ()=> fetch('/gadgets.json')
+        loader: () => fetch('/gadgets.json')
       },
       {
         path: '/dashboard',
         element: <Dashboard></Dashboard>,
-        loader: ()=> fetch('/gadgets.json')
+        loader: () => fetch('/gadgets.json')
       },
       {
         path: '/discount',
@@ -45,13 +46,13 @@ const router = createBrowserRouter([
       {
         path: '/dashboard/cart',
         element: <CartGadgets></CartGadgets>,
-        loader: ()=> fetch('/gadgets.json')
+        loader: () => fetch('/gadgets.json')
       },
       {
         path: '/dashboard/wishlist',
         element: <WishlistGadgets></WishlistGadgets>,
-        loader: ()=> fetch('/gadgets.json')
-      },      
+        loader: () => fetch('/gadgets.json')
+      },
       {
         path: '/statistics',
         element: <Statistics></Statistics>
@@ -62,7 +63,9 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <HelmetProvider>
       <RouterProvider router={router} />
       <ToastContainer />
+    </HelmetProvider>
   </StrictMode>,
 )

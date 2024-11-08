@@ -3,6 +3,7 @@ import { CiShoppingCart } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
 import { addToStoredCartList, addToStoredWishList, getStoredWishList } from "../utility/addToList";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 const GadgetDetails = () => {
 
@@ -21,7 +22,7 @@ const GadgetDetails = () => {
     useEffect(() => {
         const storedWishList = getStoredWishList();
         if (storedWishList.includes(id)) {
-           setIsDisabled(true);
+            setIsDisabled(true);
         }
     }, [id]);
 
@@ -35,10 +36,15 @@ const GadgetDetails = () => {
         navigate('/dashboard/wishlist');
     }
 
-   
+
 
     return (
         <div className="card lg:card-side w-[60%] mx-auto p-4 bg-white border relative bottom-32">
+
+            <Helmet>
+                <title>Gadget Heaven | Details</title>
+            </Helmet>
+
             <figure className="w-[40%]">
                 <img
                     src={productImage}
@@ -74,7 +80,7 @@ const GadgetDetails = () => {
                     >
                         <CiHeart />
                     </button>
-                   </div>
+                </div>
             </div>
         </div>
     );
