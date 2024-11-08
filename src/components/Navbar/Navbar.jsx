@@ -25,6 +25,7 @@ const Navbar = () => {
         <li className={`font-medium ${isHomePage ? "text-white" : "text-black"}`}><NavLink to="/">Home</NavLink></li>
         <li className={`font-medium ${isHomePage ? "text-white" : "text-black"}`}><NavLink to="/statistics">Statistics</NavLink></li>
         <li className={`font-medium ${isHomePage ? "text-white" : "text-black"}`}><NavLink to="/dashboard">Dashboard</NavLink></li>
+        <li className={`font-medium ${isHomePage ? "text-white" : "text-black"}`}><NavLink to="/discount">Discount</NavLink></li>
 
     </>
 

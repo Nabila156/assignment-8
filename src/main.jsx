@@ -15,6 +15,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import WishlistGadgets from './WishlistGadgets/WishlistGadgets.jsx';
 import CartGadgets from './CartGadgets/CartGadgets.jsx';
+import Discount from './Discount/Discount.jsx';
 
 const router = createBrowserRouter([
   {
@@ -34,7 +35,12 @@ const router = createBrowserRouter([
       },
       {
         path: '/dashboard',
-        element: <Dashboard></Dashboard>
+        element: <Dashboard></Dashboard>,
+        loader: ()=> fetch('/gadgets.json')
+      },
+      {
+        path: '/discount',
+        element: <Discount></Discount>
       },
       {
         path: '/dashboard/cart',

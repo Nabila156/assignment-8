@@ -17,7 +17,9 @@ const Banner = () => {
 
     const isStatistics = location.pathname === "/statistics";
 
-    const [isCartActive, setIsCartActive] = useState(true)
+    const getDiscount = location.pathname === "/discount";
+
+    const [isCartActive, setIsCartActive] = useState(true);
 
     const handleToggle = ()=>{
         setIsCartActive(!isCartActive)
@@ -38,6 +40,9 @@ const Banner = () => {
             }
             {
                 isStatistics && <h1 className="text-white pt-10 md:leading-[70px] font-bold text-2xl md:text-4xl">Statistics</h1>
+            }
+            {
+                getDiscount && <h1 className="text-white pt-10 md:leading-[70px] font-bold text-2xl md:text-4xl">Discount</h1>
             }
             {
                isHomePage && <button className="btn mt-8 rounded-full text-[#9538E2] font-bold text-lg bg-white">Shop Now</button>

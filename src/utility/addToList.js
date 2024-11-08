@@ -29,6 +29,11 @@ const clearCart = ()=>{
     localStorage.removeItem("cart-list");
 }
 
+const removeCartGadget = (id)=>{
+    const storedList = getStoredCartList();
+    const updatedList = storedList.filter(itemId=> itemId !== id);
+    localStorage.setItem('cart-list', JSON.stringify(updatedList));
+}
 
 
 const getStoredWishList = () => {
@@ -55,4 +60,4 @@ const addToStoredWishList = (id) => {
     }
 }
 
-export { addToStoredCartList, addToStoredWishList, getStoredCartList, getStoredWishList, clearCart}
+export { addToStoredCartList, addToStoredWishList, getStoredCartList, getStoredWishList, clearCart, removeCartGadget}

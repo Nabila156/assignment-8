@@ -11,9 +11,9 @@ const WishlistGadgets = () => {
 
 
     useEffect(() => {
-        const storedCartList = getStoredWishList();
+        const storedWishList = getStoredWishList();
      
-        const wishList = allGadgets.filter(gadget => storedCartList.includes(gadget.productId))
+        const wishList = allGadgets.filter(gadget => storedWishList.includes(gadget.productId))
 
         setGadgetList(wishList);
     },[]);
