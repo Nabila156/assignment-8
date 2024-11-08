@@ -4,7 +4,7 @@
 [Gadget Heaven](http://assignment-8-gadget-heaven-ph.surge.sh)
 
 ## Requirement Document
-[Requirement Document](https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/main/Batch-10_Assignment-08.pdf)
+[Requirements](https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/main/Batch-10_Assignment-08.pdf)
 
 ## React Fundamental Concepts Used
 - **JSX**: Used to create components and UI elements.
