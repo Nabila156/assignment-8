@@ -1,6 +1,6 @@
 import React from 'react';
 import { TiDelete } from "react-icons/ti";
-import { removeCartGadget, removeWishlistGadget } from '../utility/addToList';
+import { removeCartGadget, removeWishlistGadget } from '../../utility/addToList';
 
 const CartCard = ({ gadget, setGadgetList }) => {
 

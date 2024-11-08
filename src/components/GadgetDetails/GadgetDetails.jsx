@@ -1,7 +1,7 @@
 import { NavLink, useLoaderData, useNavigate, useParams } from "react-router-dom";
 import { CiShoppingCart } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
-import { addToStoredCartList, addToStoredWishList, getStoredWishList } from "../utility/addToList";
+import { addToStoredCartList, addToStoredWishList, getStoredWishList } from "../../utility/addToList";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 

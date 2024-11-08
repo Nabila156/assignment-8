@@ -3,7 +3,6 @@ import Gadget from "../Gadget/Gadget";
 import Categories from "../Categories/Categories";
 
 const Gadgets = ({categories}) => {
-// const Gadgets = () => {
 
     const [gadgets, setGadgets] = useState([]);
 
@@ -28,8 +27,7 @@ const Gadgets = ({categories}) => {
             <div className="flex flex-col lg:flex-row justify-between mx-auto my-12">
                 <div className="lg:w-[20%]">
                      <Categories categories={categories} activeCategory={activeCategory} handleActiveCategory={handleActiveCategory}></Categories>
-                     {/* <Categories gadgets={gadgets} activeCategory={activeCategory} handleActiveCategory={handleActiveCategory}></Categories> */}
-                </div>
+                    </div>
 
                 <div className="lg:w-[70%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     { 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { clearCart, getStoredCartList } from "../utility/addToList";
+import { clearCart, getStoredCartList } from "../../utility/addToList";
 import CartCard from "../CartCard/CartCard";
 import { useLoaderData, useNavigate } from "react-router-dom";
 import { GrSort } from "react-icons/gr";

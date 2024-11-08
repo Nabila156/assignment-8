@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import CartCard from "../CartCard/CartCard";
-import { getStoredWishList } from "../utility/addToList";
+import { getStoredWishList } from "../../utility/addToList";
 import { useLoaderData } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 

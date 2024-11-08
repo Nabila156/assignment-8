@@ -1,6 +1,6 @@
 
 import { useLoaderData } from "react-router-dom";
-import Gadgets from "../../Gadgets/Gadgets";
+import Gadgets from "../Gadgets/Gadgets";
 import { Helmet } from "react-helmet-async";
 
 const Home = () => {
