@@ -5,18 +5,26 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Root from './components/Root/Root.jsx';
-import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
-import Home from './components/Home/Home.jsx';
-import Dashboard from './Dashboard/Dashboard.jsx';
-import GadgetDetails from './components/GadgetDetails/GadgetDetails.jsx';
-import Statistics from './Statistics/Statistics.jsx';
+// import ErrorPage from './ErrorPage/ErrorPage.jsx';
+// import Home from './Home/Home.jsx';
+// import Dashboard from './Dashboard/Dashboard.jsx';
+// import GadgetDetails from './GadgetDetails/GadgetDetails.jsx';
+// import Statistics from './Statistics/Statistics.jsx';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import WishlistGadgets from './components/WishlistGAdgets/WishlistGadgets.jsx';
-import CartGadgets from './components/CartGadgets/CartGadgets.jsx';
-import Discount from './Discount/Discount.jsx';
+// import WishlistGadgets from './WishlistGAdgets/WishlistGadgets.jsx';
+// import CartGadgets from './CartGadgets/CartGadgets.jsx';
+// import Discount from './Discount/Discount.jsx';
 import { HelmetProvider } from 'react-helmet-async';
+import { Root } from 'postcss';
+import ErrorPage from './components/ErrorPage/ErrorPage';
+import Home from './components/Home/Home';
+import GadgetDetails from './components/GadgetDetails/GadgetDetails';
+import Dashboard from './components/Dashboard/Dashboard';
+import Discount from './components/Discount/Discount';
+import CartGadgets from './components/CartGadgets/CartGadgets';
+import WishlistGadgets from './components/WishlistGAdgets/WishlistGadgets';
+import Statistics from './components/Statistics/Statistics';
 
 const router = createBrowserRouter([
   {

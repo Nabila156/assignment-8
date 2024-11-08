@@ -1,9 +1,9 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import { CiShoppingCart } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
-import Banner from "../../Banner/Banner";
-import BannerImage from "../../BannerImage/BannerImage";
 import { useLocation } from "react-router-dom";
+import Banner from "../Banner/Banner";
+import BannerImage from "../BannerImage/BannerImage";
 
 const Navbar = () => {
 
